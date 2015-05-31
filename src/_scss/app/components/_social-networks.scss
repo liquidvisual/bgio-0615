@@ -1,0 +1,55 @@
+/*
+    SOCIAL-NETWORKS.CSS
+
+    - Last updated: 20.05.15
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Social Networks
+//-----------------------------------------------------------------
+
+.social-networks {
+    position: absolute;
+    bottom: -40px;
+    width: 100%;
+
+    @media #{$small-only} {
+    	background: white;
+    	padding: rem-calc(10 0);
+    }
+
+    @media #{$medium-up} {
+        bottom: 30px;
+    }
+
+	a {
+		margin: rem-calc(0 2);
+		background: $primary-color;
+		width: 30px;
+		height: 30px;
+		color: white;
+		text-align: center;
+		border-radius: 100%;
+	}
+}
+
+//=========================================
+//
+//=========================================
+
+.hero .awards img,
+.social-networks a {
+	@include transition('all');
+
+	&:active,
+	&:hover {
+	    -webkit-transform: scale(1.1);
+	       -moz-transform: scale(1.1);
+	        -ms-transform: scale(1.1);
+	         -o-transform: scale(1.1);
+	            transform: scale(1.1);
+	}
+}

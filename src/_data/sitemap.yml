@@ -1,0 +1,23 @@
+- title: Home
+  url: "#home"
+
+- title: About Us
+  url: "#about-us"
+
+- title: What We Do
+  url: "#what-we-do"
+
+- title: Who Are You
+  url: "#who-are-you"
+
+- title: Scroop
+  url: "#scoop"
+
+- title: Order an Entity
+  url: "#order-an-entity"
+
+- title: Guides
+  url: "#guides"
+
+- title: Contact Us
+  url: "#contact-us"

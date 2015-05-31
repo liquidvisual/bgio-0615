@@ -1,0 +1,127 @@
+/*
+    HEADER.CSS
+
+    - Last updated: 31.05.15
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Header
+//-----------------------------------------------------------------
+
+.global-header {
+	@include transition('all');
+	position: absolute;
+	top: 0;
+	width: 100%;
+	padding-top: rem-calc(10);
+	z-index: 1;
+	background: none; // stupid foundation
+	// background: aqua;
+
+	@media #{$large-up} {
+	    padding-top: rem-calc(20);
+	}
+
+	> .row {
+		@include transition('all');
+	}
+
+	&.is-sticky {
+		display: table;
+		padding: 0;
+		padding: rem-calc(15 0 5 0);
+
+	    @media #{$small-only} {
+	        padding: rem-calc(5); // smaller on mobile
+	    }
+	}
+}
+
+//-----------------------------------------------------------------
+// has-logo State
+//-----------------------------------------------------------------
+
+.global-header .logo {
+	@media #{$medium-up} {
+	    position: fixed;
+	    background: rgba(white, 0.8);
+	    padding: 20px;
+	    margin-left: -20px;
+	    border-radius: $global-radius;
+	    // top: 0;
+	}
+
+	@media #{$small-only} {
+	    visibility: hidden; // we still want the height
+	}
+
+	img {
+		@media #{$small-only} {
+			width: 100px;
+		}
+
+		@media #{$medium-up} {
+		    width: 230px;
+		}
+
+		@media #{$large-up} {
+		    width: 290px;
+		}
+	}
+}
+
+//-----------------------------------------------------------------
+// Hamburger Wrapper
+//-----------------------------------------------------------------
+
+.header-mobile-menu {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+
+	@media #{$medium-up} {
+		position: fixed;
+	    right: 40px;
+	    top: 30px;
+	}
+
+	@media #{$large-up} {
+	    position: absolute;
+	}
+}
+
+.global-header .hamburger {
+	@include hamburger($width: 25px, $gap: 5px, $thickness: 3px, $color: $primary-color);
+
+	@media #{$medium-up} {
+	    @include hamburger($width: 30px, $gap: 6px, $thickness: 4px, $color: $primary-color);
+	}
+}
+
+//-----------------------------------------------------------------
+// has-logo State (fixed)
+//-----------------------------------------------------------------
+
+.global-header.has-logo {
+	@media #{$small-only} {
+	    position: fixed;
+	    padding: 0; // necessary to override above
+	    border-bottom: 1px solid #E6E6E6;
+	    background: white; // > .row { // background: orange; // hack
+	}
+
+	.logo {
+		@media #{$small-only} {
+		    visibility: visible;
+		    display: inline-block;
+		    padding: rem-calc(10 0);
+		}
+	}
+}
+
+//=========================================
+//
+//=========================================

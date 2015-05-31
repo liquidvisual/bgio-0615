@@ -1,0 +1,84 @@
+/*
+    NAVIGATION.CSS
+
+    - Last updated: ^^^^^^^^
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+
+$grey-color: #C4C4C4;
+
+//-----------------------------------------------------------------
+// Navigation
+//-----------------------------------------------------------------
+
+.global-navigation {
+	position: fixed;
+	top: 20%;
+	width: 100%;
+	right: 0;
+	z-index: 1;
+	background: red;
+}
+
+.global-navigation .topbar {
+	position: absolute;
+	top: 200px;
+	// bottom: 400px;
+	right: -5px;
+	background: rgba(255, 255, 255, 0.8);
+	border-radius: $global-radius;
+	padding: rem-calc(10 20);
+}
+
+//-----------------------------------------------------------------
+// Links
+//-----------------------------------------------------------------
+
+.global-navigation {
+	ul {
+		list-style: none;
+		margin: 0;
+		overflow: hidden;
+		font-size: rem-calc(16);
+		text-align: right;
+
+		a {
+			text-transform: lowercase;
+			font-weight: normal;
+			color: $grey-color;
+		}
+	}
+}
+
+//-----------------------------------------------------------------
+// Links
+//-----------------------------------------------------------------
+
+.global-navigation a {
+	// color: lighten($primary-color, 20%);
+	// border-color: lighten($primary-color, 20%);
+}
+
+.active a {
+	// color: $grey-color;
+}
+
+.active-override-off a {
+	color: $grey-color !important;
+}
+
+.active-override-on a {
+	color: $primary-color !important;
+}
+
+//=========================================
+//
+//=========================================
+
+.off-canvas-menu a {
+	font-weight: 400;
+	text-transform: lowercase;
+}

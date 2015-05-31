@@ -1,0 +1,58 @@
+/*
+    HERO.CSS
+
+    - Last updated: 17.05.15
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Hero
+//-----------------------------------------------------------------
+
+.hero {
+	position: relative;
+	height: 100vh;
+	background: url(../img/template/hero-1.jpg) no-repeat center;
+	background-size: contain;
+
+	@media #{$medium-only} {
+	    background-position: 70% center;
+	}
+
+	@media (min-width: 641px) and (max-width: 768px) {
+		background-position: 70% bottom; // hack for portrait
+	}
+
+	@media #{$xxlarge-up} {
+	    background-position: 60% center;
+	}
+
+	// Ingenious fluke to perfectly center graphic on mobile
+	@media #{$small-only} {
+	    border-bottom: 50px solid white; // offset for ipad fix
+	}
+
+	@media #{$medium-up} and (min-height: 768px) {
+		background-size: calc(1630px / 2); //calc(1200px / 2); // image halved
+	}
+}
+
+//=========================================
+// Awards
+//=========================================
+
+.hero .footer-text {
+	position: absolute;
+	bottom: 30px;
+	width: 100%;
+
+	p {
+		margin-bottom: 0;
+	}
+
+	ul li {
+		padding-bottom: 0;
+	}
+}
