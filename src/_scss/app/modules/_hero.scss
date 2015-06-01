@@ -12,21 +12,26 @@
 //-----------------------------------------------------------------
 
 .hero {
+	display: table;
 	position: relative;
+	width: 100%;
 	height: 100vh;
-	background: url(../img/template/hero-1.jpg) no-repeat center;
+	background: url(../img/template/hero-1.jpg) no-repeat bottom;
 	background-size: contain;
 
 	@media #{$medium-only} {
-	    background-position: 70% center;
+	    background-position: 70% bottom;
 	}
 
 	@media (min-width: 641px) and (max-width: 768px) {
-		background-position: 70% bottom; // hack for portrait
+		// background-position: 70% bottom; // hack for portrait
+
+		background-position: right bottom !important;
+		background-size: 80% !important;
 	}
 
 	@media #{$xxlarge-up} {
-	    background-position: 60% center;
+	    background-position: 60% bottom;
 	}
 
 	// Ingenious fluke to perfectly center graphic on mobile
@@ -34,8 +39,22 @@
 	    border-bottom: 50px solid white; // offset for ipad fix
 	}
 
-	@media #{$medium-up} and (min-height: 768px) {
+	@media #{$medium-up} and (min-height: 930px) {
 		background-size: calc(1630px / 2); //calc(1200px / 2); // image halved
+	}
+}
+
+//-----------------------------------------------------------------
+// Hero Body
+//-----------------------------------------------------------------
+
+.hero-body {
+	display: table-cell;
+	vertical-align: middle;
+	padding-bottom: 5%;
+
+	@media (max-width: 1380px) {
+		background: rgba(white, 0.8); // make it visible for mobile
 	}
 }
 
@@ -45,6 +64,7 @@
 
 .hero .footer-text {
 	position: absolute;
+	left: 0;
 	bottom: 30px;
 	width: 100%;
 

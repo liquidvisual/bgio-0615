@@ -14,6 +14,7 @@
 .social-networks {
     position: absolute;
     bottom: -40px;
+    right: 0;
     width: 100%;
 
     @media #{$small-only} {
@@ -40,7 +41,7 @@
 //
 //=========================================
 
-.hero .awards img,
+.hero .footer-text img,
 .social-networks a {
 	@include transition('all');
 

@@ -97,7 +97,7 @@ $font-weight-normal: 300;
 
 // We use these as default colors throughout
 $primary-color: #E84E1B;
-$secondary-color: blue;
+$secondary-color: #36B3E3;
 $alert-color: #E34253;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
@@ -200,16 +200,16 @@ $large: $large-up;
 // $header-font-family: $font-family-serif;
 // $header-font-weight: $font-weight-normal;
 // $header-font-style: normal;
-$header-font-color: $body-font-color; //$primary-color;
+$header-font-color: $primary-color;
 // $header-line-height: 1.4;
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;
 // $header-text-rendering: optimizeLegibility;
 
 // We use these to control header font sizes
-$h1-font-size: rem-calc(32);
-$h2-font-size: rem-calc(32);
-$h3-font-size: rem-calc(32); // because font-face is tiny
+$h1-font-size: rem-calc(30);
+$h2-font-size: rem-calc(30);
+$h3-font-size: rem-calc(30); // because font-face is tiny
 // $h4-font-size: rem-calc(23);
 // $h5-font-size: rem-calc(18);
 // $h6-font-size: 1rem;
@@ -236,7 +236,7 @@ $h3-font-size: rem-calc(32); // because font-face is tiny
 // We use these to style paragraphs
 // $paragraph-font-family: inherit;
 // $paragraph-font-weight: $font-weight-normal;
-$paragraph-font-size: rem-calc(20);
+$paragraph-font-size: rem-calc(19);
 // $paragraph-line-height: 1.6;
 // $paragraph-margin-bottom: rem-calc(20);
 // $paragraph-aside-font-size: rem-calc(14);
@@ -257,7 +257,7 @@ $paragraph-font-size: rem-calc(20);
 // We use these to style anchors
 // $anchor-text-decoration: none;
 // $anchor-text-decoration-hover: none;
-// $anchor-font-color: $primary-color;
+$anchor-font-color: $secondary-color;
 // $anchor-font-color-hover: scale-color($primary-color, $lightness: -14%);
 
 // We use these to style the <hr> element
