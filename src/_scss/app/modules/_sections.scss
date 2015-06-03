@@ -11,27 +11,66 @@
 // Sections
 //-----------------------------------------------------------------
 
-.section {
-	padding: rem-calc(30 0);
+// .section {
+// 	padding: rem-calc(30 0);
+// }
+
+// .color-section {
+//     background: #EBEBEB;
+// }
+
+// .image-section {
+// 	height: 80vh;
+//     background-repeat: no-repeat;
+//     background-position: center center;
+//     background-image: url(/img/content/newly-weds-bg.jpg);
+//     -webkit-background-size: cover;
+//        -moz-background-size: cover;
+//          -o-background-size: cover;
+//             background-size: cover;
+
+//     @media #{$large-up} {
+//         height: 100vh;
+//         background-attachment: fixed; // issues on devices
+//     }
+// }
+
+//-----------------------------------------------------------------
+// Sections
+//-----------------------------------------------------------------
+
+.home-section {
+    background-image: url(../img/template/hero-home.jpg);
 }
 
-.color-section {
-    background: #EBEBEB;
+.about-us-section {
+    background-image: url(../img/template/hero-about-us.jpg);
 }
 
-.image-section {
-	height: 80vh;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-image: url(/img/content/newly-weds-bg.jpg);
-    -webkit-background-size: cover;
-       -moz-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;
+.what-we-do-section {
+    background-image: url(../img/template/hero-what-we-do.jpg);
+}
 
-    @media #{$large-up} {
-        height: 100vh;
-        background-attachment: fixed; // issues on devices
+.who-are-you-section {
+    background-image: url(../img/template/hero-who-are-you.jpg);
+}
+
+.contact-us-section {
+    background-image: url(../img/template/hero-contact-us.jpg);
+    background-position: 80% top;
+}
+
+//=========================================
+// All non-leader heros should have stacked
+// images instead. (We use the same class for brevity)
+//=========================================
+
+.hero.about-us-section,
+.hero.what-we-do-section,
+.hero.who-are-you-section,
+.hero.contact-us-section {
+    @media #{$small-only}, #{$medium-only} {
+        background-image: none;
     }
 }
 

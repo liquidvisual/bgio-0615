@@ -16,6 +16,10 @@ h3, h4, h5, h6 {
 	font-family: $font-family-serif;
 }
 
+h2 {
+	padding-bottom: rem-calc(30);
+}
+
 // refactor
 p.lead {
 	font-size: $paragraph-font-size;
@@ -25,10 +29,32 @@ p.lead {
 	}
 }
 
-p {
-	@media #{$devices-only} {
-	    font-size: rem-calc(16);
+p, ul {
+	font-size: rem-calc(16);
+
+	@media #{$large-up} {
+		font-size: rem-calc(16);
 	}
+
+	@media #{$xxlarge-up} {
+		font-size: $paragraph-font-size;
+	}
+}
+
+// .hero ul {
+// 	list-style: none;
+
+// 	li:before {
+// 		content: "-";
+// 		display: inline-block;
+// 		position: relative;
+// 		left: -15px;
+// 		// float: left;
+// 	}
+// }
+
+a {
+	text-decoration: underline;
 }
 
 //=========================================

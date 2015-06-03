@@ -56,7 +56,7 @@ $('.hamburger').bind('click', function(e) {
 var IS_MOBILE_SAFARI = navigator.userAgent.match(/(iPod|iPhone|iPad)/) && navigator.userAgent.match(/AppleWebKit/);
 
 if (IS_MOBILE_SAFARI) {
-    var $element = $('.hero');
+    var $element = $('.hero-leader');
 
     function fixMobileSafariViewport() {
         $element.css('height', window.innerHeight);

@@ -13,12 +13,13 @@
 
 .social-networks {
     position: absolute;
-    bottom: -40px;
+    // bottom: -40px;
+    bottom: 0;
     right: 0;
     width: 100%;
 
     @media #{$small-only} {
-    	background: white;
+    	// background: white;
     	padding: rem-calc(10 0);
     }
 
@@ -31,6 +32,7 @@
 		background: $primary-color;
 		width: 30px;
 		height: 30px;
+		line-height: 30px;
 		color: white;
 		text-align: center;
 		border-radius: 100%;

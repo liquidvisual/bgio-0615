@@ -1,7 +1,7 @@
 /*
     NAVIGATION.CSS
 
-    - Last updated: ^^^^^^^^
+    - Last updated: 03.06.15
     - hello@liquidvisual.com
 */
 //-----------------------------------------------------------------
@@ -21,6 +21,10 @@ $grey-color: #C4C4C4;
 	right: 0;
 	z-index: 1;
 	background: red;
+
+	@media #{$large-up} and (max-height: 768px) {
+		top: 0;
+	}
 }
 
 .global-navigation .topbar {
@@ -49,6 +53,7 @@ $grey-color: #C4C4C4;
 			text-transform: lowercase;
 			font-weight: normal;
 			color: $grey-color;
+			text-decoration: none;
 		}
 	}
 }
@@ -63,7 +68,7 @@ $grey-color: #C4C4C4;
 }
 
 .active a {
-	// color: $grey-color;
+	color: $primary-color !important;
 }
 
 .active-override-off a {
