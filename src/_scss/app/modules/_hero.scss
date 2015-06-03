@@ -72,12 +72,13 @@
 		border-radius: $global-radius;
 
 		@media #{$large-up} {
-		    // padding: rem-calc(0 15 15 0);
+		    padding: rem-calc(0 15 15 0);
 		    background: rgba(white, 0.8);
 		}
 
 		@media #{$xxlarge-up} {
 			background: none;
+			padding-right: rem-calc(150);
 		}
 	}
 }
@@ -108,7 +109,6 @@
 		@media #{$xlarge-up} {
 		    display: table-cell;
 		    padding-bottom: rem-calc(400);
-		    // padding-bottom: 10%;
 		}
 	}
 
