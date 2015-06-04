@@ -50,6 +50,12 @@ $(window).scroll(function(){
        $('.js-global-header').removeClass('has-logo');
     }
 
+    if (scrollTop > 0) {
+      $('.js-global-header').addClass('has-border');
+    } else {
+      $('.js-global-header').removeClass('has-border');
+    }
+
     if (scrollTop + $(window).height() >= $(document).height()-50) {
       $('.global-navigation li').addClass('active-override-off');
       $('.global-navigation li:last-child').addClass('active-override-on');
@@ -66,7 +72,7 @@ $(window).scroll(function(){
 // Cache selectors
 var lastId,
     topMenu = $(".js-scroll-highlight"),
-    topMenuHeight = topMenu.outerHeight()+90,
+    topMenuHeight = topMenu.outerHeight(),
     // All list items
     menuItems = topMenu.find("a"),
     // Anchors corresponding to menu items

@@ -48,10 +48,9 @@
 	@media #{$medium-up} {
 	    position: fixed;
 	    background: rgba(white, 0.8);
-	    padding: 20px;
-	    margin-left: -20px;
+	    padding: 10px 15px;
+	    margin-left: -15px;
 	    border-radius: $global-radius;
-	    // top: 0;
 	}
 
 	@media #{$small-only} {
@@ -64,11 +63,7 @@
 		}
 
 		@media #{$medium-up} {
-		    width: 200px;
-		}
-
-		@media #{$large-up} {
-		    width: 220px;
+		    width: 216px;
 		}
 	}
 }
@@ -87,10 +82,6 @@
 	    right: 40px;
 	    top: 30px;
 	}
-
-	@media #{$large-up} {
-	    position: absolute;
-	}
 }
 
 .global-header .hamburger {
@@ -105,12 +96,16 @@
 // has-logo State (fixed)
 //-----------------------------------------------------------------
 
-.global-header.has-logo {
+.global-header {
+
 	@media #{$small-only} {
 	    position: fixed;
 	    padding: 0; // necessary to override above
-	    border-bottom: 1px solid #E6E6E6;
 	    background: white; // > .row { // background: orange; // hack
+	}
+
+	&.has-border {
+		border-bottom: 1px solid #E6E6E6;
 	}
 
 	.logo {

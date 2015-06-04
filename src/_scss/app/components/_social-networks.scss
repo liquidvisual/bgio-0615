@@ -19,7 +19,6 @@
     width: 100%;
 
     @media #{$small-only} {
-    	// background: white;
     	padding: rem-calc(10 0);
     }
 
@@ -28,14 +27,15 @@
     }
 
 	a {
-		margin: rem-calc(0 2);
-		background: $primary-color;
-		width: 30px;
-		height: 30px;
-		line-height: 30px;
-		color: white;
-		text-align: center;
-		border-radius: 100%;
+		// margin: rem-calc(0 2);
+		// background: $primary-color;
+		// width: 24px;
+		// height: 24px;
+		// font-size: rem-calc(16);
+		// line-height: 24px;
+		// color: white;
+		// text-align: center;
+		// border-radius: 100%;
 	}
 }
 
