@@ -15,6 +15,23 @@
     color: $primary-color;
 }
 
+.section-text {
+	@media #{$medium-only} {
+		padding-bottom: rem-calc(40);
+	}
+
+	@media #{$large-up} {
+	    padding-top: 30%;
+	}
+}
+
+.trailing-hero-image.contact-us-section {
+	@media #{$small-only} {
+	    height: rem-calc(400);
+	}
+	// height: rem-calc(800);
+}
+
 //=========================================
 //
 //=========================================

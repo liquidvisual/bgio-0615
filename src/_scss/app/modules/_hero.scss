@@ -1,7 +1,7 @@
 /*
     HERO.CSS
 
-    - Last updated: 17.05.15
+    - Last updated: 08.06.15
     - hello@liquidvisual.com
 */
 //-----------------------------------------------------------------
@@ -32,11 +32,6 @@
 	    background-position: 66% bottom;
 	}
 
-	// Ingenious fluke to perfectly center footer on mobile
-	// @media #{$small-only} {
-	//     // border-bottom: 50px solid white;
-	// }
-
 	// Tablet Portrait
 	@media #{$large-up} and (max-height: 768px) {
 		background-size: calc(1046px / 2); // image halved: 1046 is hero image width
@@ -63,11 +58,12 @@
 	}
 
 	.hero-body-text {
+		// display: inline-block;
 		border-radius: $global-radius;
 
 		// Create BG on text - prevent image clash
 		@media #{$large-only}, #{$xlarge-only} {
-		    padding: rem-calc(0 15 15 0);
+		    padding: rem-calc(0 15 5 0);
 		    background: rgba(white, 0.8);
 		}
 
@@ -133,25 +129,5 @@
 }
 
 //-----------------------------------------------------------------
-// Footer Text
+//
 //-----------------------------------------------------------------
-
-.hero .footer-text {
-	position: absolute;
-	left: 0;
-	bottom: 30px;
-	width: 100%;
-
-	img {
-		margin-bottom: rem-calc(20);
-	}
-
-	p {
-		font-size: rem-calc(11);
-		margin-bottom: 0;
-	}
-
-	ul li {
-		padding-bottom: 0;
-	}
-}

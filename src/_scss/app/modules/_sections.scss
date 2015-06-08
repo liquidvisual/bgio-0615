@@ -57,7 +57,7 @@
 
 .contact-us-section {
     background-image: url(../img/template/hero-contact-us.jpg);
-    background-position: 80% top;
+    // background-position: 80% top;
 }
 
 //=========================================
@@ -71,6 +71,63 @@
 .hero.contact-us-section {
     @media #{$small-only}, #{$medium-only} {
         background-image: none;
+    }
+}
+
+//-----------------------------------------------------------------
+// BG Section
+//-----------------------------------------------------------------
+
+.bg-section {
+    padding: rem-calc(60) 0;
+    background: url(../img/template/bio-bg.svg) no-repeat;
+    background-size: contain;
+
+    @media #{$xlarge-up} {
+        padding: rem-calc(216) 0;
+    }
+}
+
+//-----------------------------------------------------------------
+// Bio Section
+//-----------------------------------------------------------------
+
+.bio-section {
+    .bio-body-text {
+        @media #{$large-up} {
+            padding-top: rem-calc(80);
+        }
+        @media #{$xlarge-up} {
+            padding-right: 30%;
+        }
+    }
+}
+
+//-----------------------------------------------------------------
+// Contact Us Section
+//-----------------------------------------------------------------
+
+.contact-us-section {
+    h1 {
+        margin-bottom: rem-calc(60);
+
+        @media #{$xlarge-up} {
+            margin-bottom: 30%; //rem-calc(214);
+        }
+    }
+
+    .hero-body-text {
+        // padding-right: 0;
+
+        @media #{$small-only}, #{$medium-only} {
+            margin-bottom: rem-calc(80); // stop bunching
+        }
+    }
+
+    &.hero {
+        @media #{$large-up} {
+            background-position: 90% top;
+        }
     }
 }
 

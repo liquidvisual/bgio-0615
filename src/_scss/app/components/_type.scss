@@ -11,18 +11,27 @@
 // Type
 //-----------------------------------------------------------------
 
+h1, h2, h3, h4, h5, h6 {
+	text-transform: lowercase;
+}
+
 h1 {
 	// font-family:'HelveticaNeueW01_53 Ext';
 	font-family:'HelveticaNeueW01-LtExt';
 }
 
-h3, h4, h5, h6 {
-	color: $primary-color;
-	font-family: $font-family-serif;
-}
-
 h2 {
 	padding-bottom: rem-calc(30);
+}
+
+h3 {
+	margin-bottom: rem-calc(40);
+}
+
+h4, h5, h6 {
+	font-size: $paragraph-font-size;
+	color: #222;
+	font-weight: bold;
 }
 
 // refactor
@@ -64,6 +73,15 @@ strong, b {
 
 a {
 	text-decoration: underline;
+}
+
+a.special-link {
+	color: $primary-color;
+	text-decoration: none;
+
+	&:hover {
+		color: darken($primary-color, 5%);
+	}
 }
 
 //=========================================

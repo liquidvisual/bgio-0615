@@ -1,7 +1,7 @@
 /*
     FOOTER.CSS
 
-    - Last updated: ^^^^^^^^
+    - Last updated: 08.06.15
     - hello@liquidvisual.com
 */
 //-----------------------------------------------------------------
@@ -11,10 +11,40 @@
 // Footer
 //-----------------------------------------------------------------
 
-.global-footer {
-	// position: relative;
-	// padding-bottom: 20px;
-	// background: red;
+.footer {
+	// display: table;
+	position: absolute;
+	bottom: 30px;
+	left: 0;
+	width: 100%;
+	// background: aqua;
+
+	.footer-text {
+		float: left;
+		// background: red;
+		img {
+			margin-bottom: rem-calc(20);
+		}
+
+		p {
+			font-size: rem-calc(11);
+			margin-bottom: 0;
+		}
+
+		.footer-links {
+			color: #C2C2C2;
+
+			a {
+				@include transition('color');
+				color: #C2C2C2;
+				text-decoration: none;
+
+				&:hover {
+					color: grey;
+				}
+			}
+		}
+	}
 }
 
 //=========================================

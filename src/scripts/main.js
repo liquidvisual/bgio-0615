@@ -24,13 +24,27 @@ $(window).load(function() {
 // }
 
 //-----------------------------------------------------------------
-// Testimonial Slider
+//
 //-----------------------------------------------------------------
 
-$('.multiple-items').slick({
-  infinite: true,
-  slidesToShow: 2,
-  slidesToScroll: 2
+// $(window).load(function(){
+//   $('.entity-panels').masonry({
+//     itemSelector: '.entity-panels li'
+//   });
+// });
+
+// $('.entity-panels').masonry({
+//   // options
+//   itemSelector: '.entity-panels li',
+//   columnWidth: 200
+// });
+
+$(window).load(function(){
+    var container = document.querySelector('.entity-panels');
+    var msnry = new Masonry( container, {
+      // options
+      itemSelector: '.entity-panels li'
+    });
 });
 
 //-----------------------------------------------------------------

@@ -1,0 +1,28 @@
+{% assign bios = site.data.bios %}
+
+{% for item in bios %}
+	<section id="andrew-baggio" class="bg-section bio-section">
+
+		<!-- Bio Body -->
+		<article class="bio-body">
+			<div class="row outer-row">
+				<div class="large-4 columns text-center">
+					<img src="{{ item.image }}">
+				</div>
+				<div class="large-8 columns">
+					<div class="bio-body-text">
+
+						{% if forloop.last %}
+							<p><strong>{{ item.title }}</strong></p>
+						{% else %}
+							<h3>{{ item.title }}</h3>
+						{% endif %}
+
+						{{ item.body | markdownify }}
+					</div>
+				</div> <!-- .row -->
+			</div> <!-- .outer-row -->
+		</article>
+
+	</section>
+{% endfor %}

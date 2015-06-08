@@ -97,7 +97,6 @@
 //-----------------------------------------------------------------
 
 .global-header {
-
 	@media #{$small-only} {
 	    position: fixed;
 	    padding: 0; // necessary to override above
@@ -105,7 +104,9 @@
 	}
 
 	&.has-border {
-		border-bottom: 1px solid #E6E6E6;
+		@media #{$small-only} {
+		    border-bottom: 1px solid #E6E6E6;
+		}
 	}
 
 	.logo {
