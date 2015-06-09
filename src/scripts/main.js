@@ -27,25 +27,40 @@ $(window).load(function() {
 //
 //-----------------------------------------------------------------
 
-// $(window).load(function(){
-//   $('.entity-panels').masonry({
-//     itemSelector: '.entity-panels li'
-//   });
-// });
+$(document).ready(function() {
+    // var container = document.querySelector('.entity-panels');
+    // var msnry = new Masonry( container, {
+    //   // options
+    //   itemSelector: '.entity-panels li'
+    // });
 
-// $('.entity-panels').masonry({
-//   // options
-//   itemSelector: '.entity-panels li',
-//   columnWidth: 200
-// });
+    var grid = document.querySelector('.entity-panels');
+      var msnry = new Masonry( grid, {
 
-$(window).load(function(){
-    var container = document.querySelector('.entity-panels');
-    var msnry = new Masonry( container, {
-      // options
-      itemSelector: '.entity-panels li'
-    });
+      });
+
+    // msnry.on( 'layoutComplete', function( laidOutItems ) {
+    //     // console.log( 'Masonry layout complete with ' + laidOutItems.length + ' items' );
+    //     masonryEqualHeights();
+    // });
+
+    // masonryEqualHeights();
 });
+
+
+
+
+// function masonryEqualHeights() {
+
+//     $('.media-panel.arrow-up').css('height', 'auto');
+
+//     var entityPanelsHeight = $('.entity-panels').height();
+//     var entityPanelTop = $('.media-panel.arrow-right').height(); // top one
+
+//     var newHeight = entityPanelsHeight - (entityPanelTop + 74);
+
+//     $('.media-panel.arrow-up').height(newHeight);
+// }
 
 //-----------------------------------------------------------------
 // Kickstart Foundation / Touch Conditionals

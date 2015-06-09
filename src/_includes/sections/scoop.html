@@ -1,17 +1,7 @@
-<section id="scoop" class="bg-section">
+<section id="scoop" class="bg-section bg-section-slim">
 
 	<div class="row outer-row">
-		<div class="large-5 columns">
-			<div class="media-panel">
-				<img src="/img/template/scoop@2x.png">
-				<div class="media-panel-body">
-					{% for i in (1..8) %}
-						<p>Scoop title to come | <a href="#">may 2015</a></p>
-					{% endfor %}
-				</div>
-			</div>
-		</div>
-		<div class="large-7 columns">
+		<div class="large-7 large-push-5 columns">
 			<div class="row">
 				<div class="large-8 large-offset-1 columns">
 					<div class="section-text">
@@ -22,7 +12,16 @@
 					</div>
 				</div>
 			</div>
-
+		</div>
+		<div class="large-5 large-pull-7 columns">
+			<div class="media-panel">
+				<img src="/img/template/scoop@2x.png">
+				<div class="media-panel-body">
+					{% for i in (1..8) %}
+						<p>Scoop title to come | <a href="#">may 2015</a></p>
+					{% endfor %}
+				</div>
+			</div>
 		</div> <!-- .columns -->
 	</div> <!-- .outer-row -->
 

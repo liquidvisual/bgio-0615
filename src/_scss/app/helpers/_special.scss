@@ -16,9 +16,7 @@
 }
 
 .section-text {
-	@media #{$medium-only} {
-		padding-bottom: rem-calc(40);
-	}
+	padding-bottom: rem-calc(40);
 
 	@media #{$large-up} {
 	    padding-top: 30%;

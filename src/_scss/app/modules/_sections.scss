@@ -79,9 +79,15 @@
 //-----------------------------------------------------------------
 
 .bg-section {
-    padding: rem-calc(60) 0;
+    padding: rem-calc(60 0);
     background: url(../img/template/bio-bg.svg) no-repeat;
     background-size: contain;
+
+    &.bg-section-slim {
+        @media #{$small-only} {
+            padding: rem-calc(20 0);
+        }
+    }
 
     @media #{$xlarge-up} {
         padding: rem-calc(216) 0;
