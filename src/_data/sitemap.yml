@@ -3,12 +3,35 @@
 
 - title: About Us
   url: "#about-us"
+  children:
+    - title: Andrew Baggio
+      url: "#andrew-baggio"
+    - title : Claude Kong
+      url: "#claude-kong"
+    - title: Eimear Baggio
+      url: "#eimear-baggio"
+    - title: Hope Wood
+      url: "#hope-wood"
 
 - title: What We Do
   url: "#what-we-do"
+  children:
+    - title: Commercial
+      url: "#commercial"
+    - title: Taxation
+      url: "#taxation"
+    - title: Private Client
+      url: "#private-client"
 
 - title: Who Are You
   url: "#who-are-you"
+  children:
+    - title: Accountants
+      url: "#accountants"
+    - title: Financial Planners
+      url: "#financial-planners"
+    - title: Other
+      url: "#other"
 
 - title: Scoop
   url: "#scoop"

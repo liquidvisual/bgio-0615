@@ -19,6 +19,8 @@
 	background-size: contain;
 	padding-top: rem-calc(20);
 
+	// border-bottom: 1px solid grey; testing purposes
+
 	@media #{$large-up} {
 		height: 100vh;
 		background-position: 90% bottom;
@@ -98,7 +100,7 @@
 
 		@media #{$xlarge-up} {
 		    padding-top: 0; // reset
-			padding-bottom: rem-calc(300);
+			padding-bottom: rem-calc(252);
 		}
 	}
 

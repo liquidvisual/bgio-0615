@@ -2,13 +2,15 @@
 
 <ul class="topbar js-scroll-highlight">
 
-	<!-- Displayed on MMenu only -->
-	<!-- <li class="hide-for-large-up"><a href="#">Adelaide</a></li>
-	<li class="hide-for-large-up"><a href="#">Australia</a></li>
-	<li class="hide-for-large-up"><a href="#">Worldwide</a></li>
-	<li class="hide-for-large-up Spacer"></li> -->
-
     {% for item in sitemap %}
-        <li class="{% if forloop.first %}active{% endif %}"><a href="#{{ item.url | slugify }}">{{ item.title }}</a></li>
+        <li class="{% if forloop.first %}active{% endif %}"><a href="#{{ item.url | slugify }}">{{ item.title }}</a>
+			{% if item.children %}
+			    <ul class="dropdown">
+			    	{% for item in item.children  %}
+			    		<li><a href="{{ item.url }}">{{ item.title }}</a></li>
+			    	{% endfor %}
+			    </ul>
+			{% endif %}
+        </li>
     {% endfor %}
 </ul>

@@ -1,0 +1,95 @@
+/*
+    ANIMATION.CSS
+
+    - Last updated: 12.06.15
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+
+$trickle-container-width: 500px; // same as homepage hero image
+$trick-image-height: 461px;
+
+//-----------------------------------------------------------------
+// Hidden on Load for animating
+//-----------------------------------------------------------------
+
+.logo,
+.hero-body-text,
+.topbar,
+.footer,
+.trickle-logos-1,
+.trickle-logos-2,
+.trickle-logos-3 {
+	display: none;
+}
+
+//-----------------------------------------------------------------
+// Logos Animation on Homepage
+//-----------------------------------------------------------------
+
+.trickle-animation-container {
+	position: absolute;
+	top: -6%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	// z-index: -1;
+}
+
+//-----------------------------------------------------------------
+// Background Images
+//-----------------------------------------------------------------
+
+.trickle-logos-1,
+.trickle-logos-2,
+.trickle-logos-3 {
+	position: absolute;
+	top: 0%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-position: center bottom;
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	@media #{$large-up} {
+		background-position: 90% bottom;
+	}
+
+	@media #{$xlarge-up} {
+		background-position: 65% bottom;
+	}
+
+	@media #{$xxlarge-up} {
+	    background-position: 66% bottom;
+	}
+
+	// Tablet Portrait
+	@media #{$large-up} and (max-height: 768px) {
+		background-size: calc(1046px / 2); // image halved: 1046 is hero image width
+	}
+
+	// Center on SMALL and PORTRAIT only
+	@media #{$small-only}, #{$medium-only} {
+	    background-position: center;
+	}
+}
+
+//=========================================
+//
+//=========================================
+
+.trickle-logos-1 {
+	background-image: url(../img/template/bs-1.png);
+}
+
+.trickle-logos-2 {
+	background-image: url(../img/template/bs-2.png);
+}
+
+.trickle-logos-3 {
+	background-image: url(../img/template/bs-3.png);
+}
+

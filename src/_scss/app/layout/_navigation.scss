@@ -1,7 +1,7 @@
 /*
     NAVIGATION.CSS
 
-    - Last updated: 03.06.15
+    - Last updated: 12.06.15
     - hello@liquidvisual.com
 */
 //-----------------------------------------------------------------
@@ -29,7 +29,7 @@ $grey-color: #C4C4C4;
 
 .global-navigation .topbar {
 	position: absolute;
-	top: 200px;
+	top: 240px;
 	// bottom: 400px;
 	right: -5px;
 	background: rgba(255, 255, 255, 0.8);
@@ -50,11 +50,24 @@ $grey-color: #C4C4C4;
 		text-align: right;
 		line-height: 1.3;
 
+		li {
+			margin-bottom: .2rem;
+		}
+
 		a {
 			text-transform: lowercase;
 			font-weight: normal;
 			color: $grey-color;
 			text-decoration: none;
+		}
+
+		ul {
+			display: none;
+		}
+
+		// Nested
+		ul li a {
+			color: lighten($primary-color, 30%) !important;
 		}
 	}
 }
@@ -79,6 +92,11 @@ $grey-color: #C4C4C4;
 .active-override-on a {
 	color: $primary-color !important;
 }
+
+// .active-override-on ul,
+// .active ul {
+// 	display: block !important;
+// }
 
 //=========================================
 //

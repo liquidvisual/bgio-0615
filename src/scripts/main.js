@@ -13,6 +13,12 @@ var TOUCH_ENABLED = $(".touch").length;
 
 $(document).ready(function() {
     NProgress.start(); // Start preloader bar
+
+    // Masonry
+    var grid = document.querySelector('.entity-panels');
+      var msnry = new Masonry( grid, {
+
+      });
 });
 
 $(window).load(function() {
@@ -21,45 +27,6 @@ $(window).load(function() {
 
 // window.onload = function(){
 //     // NProgress.done();
-// }
-
-//-----------------------------------------------------------------
-//
-//-----------------------------------------------------------------
-
-$(document).ready(function() {
-    // var container = document.querySelector('.entity-panels');
-    // var msnry = new Masonry( container, {
-    //   // options
-    //   itemSelector: '.entity-panels li'
-    // });
-
-    var grid = document.querySelector('.entity-panels');
-      var msnry = new Masonry( grid, {
-
-      });
-
-    // msnry.on( 'layoutComplete', function( laidOutItems ) {
-    //     // console.log( 'Masonry layout complete with ' + laidOutItems.length + ' items' );
-    //     masonryEqualHeights();
-    // });
-
-    // masonryEqualHeights();
-});
-
-
-
-
-// function masonryEqualHeights() {
-
-//     $('.media-panel.arrow-up').css('height', 'auto');
-
-//     var entityPanelsHeight = $('.entity-panels').height();
-//     var entityPanelTop = $('.media-panel.arrow-right').height(); // top one
-
-//     var newHeight = entityPanelsHeight - (entityPanelTop + 74);
-
-//     $('.media-panel.arrow-up').height(newHeight);
 // }
 
 //-----------------------------------------------------------------
@@ -100,7 +67,7 @@ if (IS_MOBILE_SAFARI) {
 //
 //-----------------------------------------------------------------
 
-if (TOUCH_ENABLED) {
+// if (TOUCH_ENABLED) {
     // Make Accordion jump to the top of the heading on mobile
     // http://foundation.zurb.com/forum/posts/1316-accordion-jump-to-top-when-active
     /*$(document).foundation('accordion', {
@@ -109,7 +76,7 @@ if (TOUCH_ENABLED) {
             $('html, body').animate({ scrollTop: containerPos }, 300);
         }
     });*/
-}
+// }
 
 //-----------------------------------------------------------------
 // <= IE8 Caution Message
