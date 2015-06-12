@@ -55,10 +55,15 @@ $grey-color: #C4C4C4;
 		}
 
 		a {
+			@include transition('color, 40');
 			text-transform: lowercase;
 			font-weight: normal;
 			color: $grey-color;
 			text-decoration: none;
+
+			&:hover {
+				color: $primary-color;
+			}
 		}
 
 		ul {
