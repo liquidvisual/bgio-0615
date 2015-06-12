@@ -15,14 +15,16 @@ $trick-image-height: 461px;
 // Hidden on Load for animating
 //-----------------------------------------------------------------
 
-.logo,
-.hero-body-text,
-.topbar,
-.footer,
-.trickle-logos-1,
-.trickle-logos-2,
-.trickle-logos-3 {
-	display: none;
+.animation-enabled {
+	.logo,
+	.hero-body-text,
+	.topbar,
+	.footer,
+	.trickle-logos-1,
+	.trickle-logos-2,
+	.trickle-logos-3 {
+		display: none;
+	}
 }
 
 //-----------------------------------------------------------------
