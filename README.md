@@ -1,9 +1,9 @@
-idc-0315
+bgio-0615
 =============================
 
 ## To Run
 
-    git clone git@github.com:liquidvisual/URL-GOES-HERE.git
+    git clone git@github.com:liquidvisual/bgio-0615.git
     bundle install
     npm install
     bower install
