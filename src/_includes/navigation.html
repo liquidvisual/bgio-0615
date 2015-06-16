@@ -1,9 +1,9 @@
 {% assign sitemap = site.data.sitemap %}
 
-<ul class="topbar js-scroll-highlight">
+<ul class="topbar nav">
 
     {% for item in sitemap %}
-        <li class="{% if forloop.first %}active{% endif %}"><a href="#{{ item.url | slugify }}">{{ item.title }}</a>
+        <li class="{% if item.children %}has-dropdown{% endif %} {% if forloop.first %}active{% endif %}"><a href="#{{ item.url | slugify }}">{{ item.title }}</a>
 			{% if item.children %}
 			    <ul class="dropdown">
 			    	{% for item in item.children  %}

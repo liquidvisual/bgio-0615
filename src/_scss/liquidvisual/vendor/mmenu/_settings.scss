@@ -10,8 +10,13 @@ $mm_emphasizedBackgroundColor	: rgba( #000, 0.1 );
 // $mm_highlightedBackgroundColor	: rgba( #000, 0.05 );
 $mm_textColor					: white; //rgba( #000, 0.7 );
 
+#mm-1 .mm-navbar {
+	// display: none;
+}
+
 .mm-navbar {
-	display: none !important;
+	background: rgba(black, 0.05);
+	border-bottom: 0 !important;
 }
 // //	Sizes
 // $mm_padding			: 10px;

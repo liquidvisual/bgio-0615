@@ -1,7 +1,7 @@
 {% assign bios = site.data.bios %}
 
 {% for item in bios %}
-	<section id="andrew-baggio" class="bg-section bio-section">
+	<section id="{{ item.title | slugify }}" class="bg-section bio-section">
 
 		<!-- Bio Body -->
 		<article class="bio-body">

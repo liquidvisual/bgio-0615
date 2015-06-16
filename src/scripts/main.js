@@ -1,5 +1,5 @@
 /*
-    MAIN SCRIPTS - Last updated: 00-00-00
+    MAIN SCRIPTS - Last updated: 16.06.15
 */
 //-----------------------------------------------------------------
 // Variables
@@ -19,6 +19,9 @@ $(document).ready(function() {
       var msnry = new Masonry( grid, {
 
       });
+
+    // Start Bootstrap Scrollspy (nav highlighting)
+    $('body').scrollspy();
 });
 
 $(window).load(function() {
@@ -39,7 +42,7 @@ $('#off-canvas-menu').mmenu({ "offCanvas": { "position": "right" }});
 
 var API = $("#off-canvas-menu").data("mmenu");
 
-$('.hamburger').bind('click', function(e) {
+$('.header-mobile-menu').bind('click', function(e) {
     e.preventDefault();
     API.open();
 });
