@@ -15,7 +15,7 @@
 						{% if forloop.last %}
 							<p><strong>{{ item.title }}</strong></p>
 						{% else %}
-							<h3>{{ item.title }}</h3>
+							<h3 class="increase-bottom-margin">{{ item.title }}</h3>
 						{% endif %}
 
 						{{ item.body | markdownify }}
