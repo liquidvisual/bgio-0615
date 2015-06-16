@@ -30,7 +30,7 @@ $(window).load(function() {
 	// 		});
 	// 	});
 
-	if ($('.animations-enabled').length) {
+	if ($('.animation-enabled').length) {
 		$('.trickle-logos-1').show().css('opacity', 0).transition({ opacity: 100, delay: 0 }, 1000);
 		$('.trickle-logos-2').show().css('opacity', 0).transition({ opacity: 100, delay: 500 }, 1000);
 		$('.trickle-logos-3').show().css('opacity', 0).transition({ opacity: 100, delay: 1500 }, 1000);

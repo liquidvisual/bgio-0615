@@ -115,7 +115,7 @@
 	.logo {
 		@media #{$small-only} {
 		    visibility: visible;
-		    display: inline-block;
+		    display: inline-block !important; // is JS overriding this??
 		    padding: rem-calc(10 0);
 		}
 	}
