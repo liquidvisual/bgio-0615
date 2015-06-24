@@ -5,7 +5,7 @@
 // Variables
 //-----------------------------------------------------------------
 
-var topMenu = $(".topbar");
+var topMenu = $(".logo");
 var topMenuHeight = topMenu.outerHeight();
 var menuItems = $('.topbar, .off-canvas-menu').find('a');
 
@@ -38,8 +38,20 @@ $(window).scroll(function(){
 //-----------------------------------------------------------------
 
 menuItems.click(function(e){
-	var href = $(this).attr("href"),
-	offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+	var href = $(this).attr("href");
+	var viewportWidth = $(window).width();
+	var offsetTop;
+
+	// If Mobile or Portrait - factor in logo (sections have no vertical padding)
+	if (viewportWidth <= 641) {
+		offsetTop = href === "#" ? 0 : $(href).offset().top - 50; // we know 50
+	} else if (viewportWidth <= 768) {
+		offsetTop = href === "#" ? 0 : $(href).offset().top - (topMenuHeight+60);
+	} else if (viewportWidth <= 1024) {
+		offsetTop = href === "#" ? 0 : $(href).offset().top - (topMenuHeight);
+	} else {
+		offsetTop = href === "#" ? 0 : $(href).offset().top;
+	}
 
 	e.preventDefault();
 

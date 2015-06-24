@@ -19,9 +19,8 @@
 	padding-top: rem-calc(10);
 	z-index: 1;
 	background: none; // stupid foundation
-	// background: aqua;
 
-	@media #{$large-up} {
+	@media #{$medium-up} {
 	    padding-top: rem-calc(20);
 	}
 
@@ -77,15 +76,14 @@
 	position: absolute;
 	top: 17px; // looks right
 	right: 15px;
-
-	@media #{$small-only} {
-	    background: white;
-	}
+	background: white;
 
 	@media #{$medium-up} {
 		position: fixed;
-	    right: 40px;
+	    right: 30px;
 	    top: 30px;
+	    padding: rem-calc(4 4 8 4);
+	    border-radius: $global-radius;
 	}
 }
 
@@ -102,11 +100,13 @@
 //-----------------------------------------------------------------
 
 .global-header {
-
 	@media #{$small-only}, #{$medium-only}, #{$large-only} {
 	    position: fixed;
-	    padding: 0; // necessary to override above
 	    // background: white; // obscures logos anim
+	}
+
+	@media #{$small-only} {
+	    padding: 0; // necessary to override above
 	}
 
 	&.has-border {

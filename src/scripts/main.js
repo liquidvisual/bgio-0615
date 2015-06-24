@@ -14,11 +14,7 @@ var TOUCH_ENABLED = $(".touch").length;
 $(document).ready(function() {
     NProgress.start(); // Start preloader bar
 
-    // Masonry
-    var grid = document.querySelector('.entity-panels');
-      var msnry = new Masonry( grid, {
-
-      });
+    launchMasonry()
 
     // Start Bootstrap Scrollspy (nav highlighting)
     $('body').scrollspy();
@@ -26,11 +22,17 @@ $(document).ready(function() {
 
 $(window).load(function() {
     NProgress.done();
+    launchMasonry();
 });
 
-// window.onload = function(){
-//     // NProgress.done();
-// }
+//-----------------------------------------------------------------
+// Start Masonry
+//-----------------------------------------------------------------
+
+function launchMasonry() {
+    var grid = document.querySelector('.entity-panels');
+    var msnry = new Masonry( grid, {});
+}
 
 //-----------------------------------------------------------------
 // Kickstart Foundation / Touch Conditionals

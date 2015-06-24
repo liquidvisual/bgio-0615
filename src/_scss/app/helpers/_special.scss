@@ -37,3 +37,45 @@
 .increase-bottom-margin {
 	margin-bottom: rem-calc(30);
 }
+
+//-----------------------------------------------------------------
+// Overrides - Added by Jono
+//-----------------------------------------------------------------
+
+p, p.lead, ul {
+	font-size: 0.9rem;
+}
+
+.light, .light a {
+	color: #C2C2C2; text-decoration: none; font-size: .75rem;
+}
+
+.small {
+	font-size: .75rem;
+}
+
+.light a:hover {
+	color: grey;
+}
+
+#home .footer-text p {
+	font-size: .6555rem;
+}
+
+#contact-us .hero-body-text p {
+	font-size: 0.8rem;
+}
+
+@media only screen and (min-width: 48.063em) {
+	p, ul { font-size: 0.9rem; }
+}
+@media only screen and (min-width: 40.063em) {
+	h3 { font-size: 1.5625rem; }
+}
+@media only screen and (max-width: 40em) {
+	.contact-us-section .hero-body-text {  margin-bottom: 8rem;}
+}
+
+@media only screen and (min-width: 70.063em) {
+	.hero-body .outer-row {   margin-top: 180px; }
+}
